@@ -1,0 +1,79 @@
+.carField {
+  position: relative;
+}
+
+.carDisplay {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.car {
+  position: relative;
+  padding-left: 10px;
+}
+
+.carAndFinish {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  margin-right: 120px;
+}
+
+.btn {
+  width: 19px;
+  height: 28px;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+}
+
+.btn:disabled {
+  background: gray;
+}
+
+.btnStart {
+  background: green;
+}
+
+.btnStop {
+  background: red;
+}
+
+.road {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-top: 2px dashed white;
+  bottom: 3px;
+}
+
+.carContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.finish {
+  fill: tomato;
+}
+
+.started {
+  animation: drive;
+  animation-fill-mode: forwards;
+}
+
+.stopped {
+  animation-play-state: paused;
+}
+
+@keyframes drive {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 100%;
+  }
+}
